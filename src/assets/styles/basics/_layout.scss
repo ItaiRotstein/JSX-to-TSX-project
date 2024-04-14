@@ -1,0 +1,22 @@
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    // margin: auto 4rem;
+}
+
+//tablets
+@media only screen and (min-width: 640px) {
+    .main-layout {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        height: 100vh;
+        // margin: auto;
+
+    }
+}
+
+//desktop
+// @media only screen and (min-width: 768px) {
+//     .main-layout {
+//     }
+// }

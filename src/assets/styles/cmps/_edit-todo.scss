@@ -1,0 +1,8 @@
+.edit-todo {
+    input[type="checkbox"] {
+        &:hover {
+            outline: 1px $clr8 solid;
+            cursor: pointer;
+        }
+    }
+}

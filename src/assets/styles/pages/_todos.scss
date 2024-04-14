@@ -1,0 +1,32 @@
+.todos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    padding: 0 4rem;
+    padding-bottom: 5rem;
+
+    .add-button {
+        position: fixed;
+        bottom: 18px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+        color: $clr8;
+        @include pointer;
+    }
+}
+
+//tablets
+@media only screen and (min-width: 640px) {
+    .todos {
+        padding-bottom: 1rem;
+
+        .add-button {
+            display: none;
+        }
+    }
+}
+
+//desktop
+@media only screen and (min-width: 768px) {}

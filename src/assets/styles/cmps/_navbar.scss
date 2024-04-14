@@ -1,0 +1,19 @@
+.navbar {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    top: 65px;
+    left: 4rem;
+    padding: 0;
+    padding-bottom: 1rem;
+    justify-content: center;
+    transition: opacity 0.2s, ;
+    input[type=text] {
+        @include input-text;
+    }
+}
+
+.navbar.active {
+    opacity: 1;
+    transition: opacity 0.9s ease-in,;
+}

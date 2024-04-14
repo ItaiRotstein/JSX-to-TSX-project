@@ -1,0 +1,113 @@
+.sidenav-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+}
+
+.sidenav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: $clr0;
+    border-top: solid 1px $clr2;
+    padding: 2rem 4rem 2rem 4rem;
+    transition: height 0.2s;
+
+    .menu-item {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        @include pointer;
+
+        &:hover {
+            background-color: lighten($clr7, 40%);
+            border-radius: 7px;
+        }
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        color: $clr10;
+    }
+
+    .add-button {
+        position: fixed;
+        right: 20px;
+        bottom: 150px;
+        width: 50px;
+        height: 50px;
+        color: $clr8;
+        margin-right: 6px;
+        margin-left: -3px;
+
+        &:hover {
+            color: darken($clr8, 15%)
+        }
+    }
+
+    .todo-filter {
+        @include input-text;
+        min-width: 75%;
+    }
+}
+
+.add-task-text {
+    display: none;
+}
+
+.add-task-menu {
+    position: absolute;
+}
+
+//tablets
+@media only screen and (min-width: 640px) {
+    .sidenav-container {
+        display: block;
+        border-top: none;
+    }
+
+    .sidenav {
+        position: static;
+        bottom: initial;
+        width: initial;
+        display: block;
+        border-right: 1px solid $clr2;
+        margin-top: 20px;
+        border-top: none;
+
+        .menu-item {
+            margin-bottom: 12px;
+            padding: 4px 8px 4px 3px;
+        }
+
+        .add-button {
+            display: initial;
+            position: static;
+            width: 25px;
+            height: 25px;
+        }
+
+        .todo-filter {
+            margin-bottom: 12px;
+        }
+
+        .add-task-text {
+            display: inline;
+        }
+
+        .add-task-menu {
+            position: static;
+        }
+    }
+}
+
+//desktop
+@media only screen and (min-width: 768px) {}
