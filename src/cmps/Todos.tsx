@@ -12,8 +12,8 @@ const Todos = () => {
   const [todos, setTodos] = useState<TodoModel[]>([]);
 
   useEffect(() => {
-      const data = getTodos('')
-      data.then((res) => setTodos(res))
+    const data = getTodos('')
+    data.then((res) => setTodos(res))
   }, []);
 
   const onAddTodo = (title: string) => {

@@ -21,7 +21,6 @@ const Header = () => {
             <span>Login</span>
           </a>
         </div>
-
       </header >
     </div >
   )

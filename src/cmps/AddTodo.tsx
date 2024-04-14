@@ -6,7 +6,6 @@ import Modal from 'react-bootstrap/Modal';
 import { IoAddCircleSharp } from "react-icons/io5";
 
 interface Props {
-    // addTodo: (title: string) => Promise<void>;
     addTodo: (title: string) => void
 }
 const AddTodo = ({ addTodo }: Props) => {
@@ -26,9 +25,6 @@ const AddTodo = ({ addTodo }: Props) => {
 
     return (
         <>
-            {/* <Button variant="primary">
-                Add Todo
-            </Button> */}
             <div className='add-task-menu menu-item' onClick={handleShow} >
                 <IoAddCircleSharp className="add-button" />
                 <span className={"add-task-text"}>Add Task</span>

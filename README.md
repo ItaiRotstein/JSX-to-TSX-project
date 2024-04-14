@@ -1,1 +1,1 @@
-this is a duplicate of mern-todos project, updated with typescript. no backend. backend is at the original mern-todos project.
+This project is a duplicate of MERN-todos project, updated with TS and TSX. No backend. Backend is at the orginial project. Both projects have to work together to get connection between front and back.
